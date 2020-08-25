@@ -1,37 +1,120 @@
-## Welcome to GitHub Pages
+## PlutoGrid for flutter - v0.1.0
 
-You can use the [editor on GitHub](https://github.com/bosskmk/bosskmk.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+PlutoGrid, a data grid, is being developed with the goal of running on all platforms supported by Flutter.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+> Currently, under development, there are plans to distribute to pub.dev.
 
-### Markdown
+### Features  
+* Column fixation : Columns can be fixed to the left or right of the grid.
+* Column shift : Change the order of the columns by dragging the column title.
+* Column sort : Sort the list by clicking on the column heading.
+* Column width : Change the column width by dragging the icon to the right of the column title.
+* Column action : Click the icon to the right of the column title, you can control the column with the column action menu.
+* Multi selection : By long tapping or clicking and moving.
+* Copy & paste : Ctrl(macos : Meta) + C or V.
+* Select Row Popup : Same as the grid, a selection popup that can be used when selecting an item from a list.
+* Keyboard support : Arrow keys, Enter(Shift + Enter), Tab(Shift +Tab), Esc...
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Demo
+[Demo Web](https://bosskmk.github.io/build/web/index.html)
 
-```markdown
-Syntax highlighted code block
+### Preview
 
-# Header 1
-## Header 2
-### Header 3
+![PlutoGrid Image](https://bosskmk.github.io/images/pluto_grid_img1.jpg)
 
-- Bulleted
-- List
+![PlutoGrid Image](https://bosskmk.github.io/images/pluto_grid_img2.jpg)
 
-1. Numbered
-2. List
+### Usage
+Generate the data to be used in the grid.
+```dart
 
-**Bold** and _Italic_ and `Code` text
+List<PlutoColumn> columns = [
+  PlutoColumn(
+    title: 'leftFixedColumn',
+    field: 'column1',
+    type: PlutoColumnType.text(),
+    fixed: PlutoColumnFixed.Left,
+  ),
+  PlutoColumn(
+    title: 'readOnlyColumn',
+    field: 'column2',
+    type: PlutoColumnType.text(readOnly: true),
+  ),
+  PlutoColumn(
+    title: 'textColumn',
+    field: 'column3',
+    type: PlutoColumnType.text(),
+  ),
+  PlutoColumn(
+    title: 'selectColumn',
+    field: 'column4',
+    type: PlutoColumnType.select(['One', 'Two', 'Three']),
+  ),
+  PlutoColumn(
+    title: 'rightFixedColumn',
+    field: 'column5',
+    type: PlutoColumnType.text(),
+    fixed: PlutoColumnFixed.Right,
+  ),
+];
 
-[Link](url) and ![Image](src)
+List<PlutoRow> rows = [
+  PlutoRow(
+    cells: {
+      'column1': PlutoCell(value: 'column1 value'),
+      'column3': PlutoCell(value: 'column3 value'),
+      'column4': PlutoCell(value: 'One'),
+      'column5': PlutoCell(value: 'column5 value'),
+    }, 
+  ),
+  PlutoRow(
+    cells: {
+      'column1': PlutoCell(value: 'column1 value'),
+      'column2': PlutoCell(value: 'column2 value'),
+      'column3': PlutoCell(value: 'column3 value'),
+      'column4': PlutoCell(value: 'Two'),
+      'column5': PlutoCell(value: 'column5 value'),
+    }, 
+  ),
+  PlutoRow(
+    cells: {
+      'column1': PlutoCell(value: 'column1 value'),
+      'column2': PlutoCell(value: 'column2 value'),
+      'column3': PlutoCell(value: 'column3 value'),
+      'column4': PlutoCell(value: 'Three'),
+      'column5': PlutoCell(value: 'column5 value'),
+    }, 
+  ),
+];
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Create a grid with the data created above.
+```dart
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('PlutoGrid Demo'),
+      ),
+      body: Container(
+        padding: const EdgeInsets.all(30),
+        child: PlutoGrid(
+          columns: dummyData.columns,
+          rows: dummyData.rows,
+          onChanged: (PlutoOnChangedEvent event) {
+            print(event);
+          },
+        ),
+      ),
+    );
+  }
+```
 
-### Jekyll Themes
+### Coming soon
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/bosskmk/bosskmk.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+* Column types (Number, Date, DateTime...)
+* Column filtering
+* Row selection
+* Multi column sorting
+* Paging
+* Control UI for mobile
