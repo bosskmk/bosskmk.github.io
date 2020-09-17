@@ -11,15 +11,16 @@ const RESOURCES = {
 "assets/assets/images/time_popup.jpg": "d168d9bce12cd7f46b0b807ebc879e4f",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
 "assets/fonts/MaterialIcons-Regular.otf": "a68d2a28c526b3b070aefca4bac93d25",
-"assets/NOTICES": "58ca473848df51ff263976eee4062e2e",
+"assets/NOTICES": "f7077941e48290b898ecfc71c582969f",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "115e937bb829a890521f72d2e664b632",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"index.html": "f562beed9aca80518b95ec01f76aa1b6",
-"/": "f562beed9aca80518b95ec01f76aa1b6",
-"main.dart.js": "3d0b7124df2ba2793c25919060776a83",
-"manifest.json": "9e7b34fd7c291ca2523123ef20497930"
+"index.html": "57ccef2fb0889a922707e12ce3fe050a",
+"/": "57ccef2fb0889a922707e12ce3fe050a",
+"main.dart.js": "5f9e156ef0d4c92e6f7ffe7d4e7a267b",
+"manifest.json": "9e7b34fd7c291ca2523123ef20497930",
+"version.json": "4b6db237b3514a88107a422469adfb0f"
 };
 
 // The application shell files that are downloaded before a service worker can
@@ -31,9 +32,9 @@ const CORE = [
 "assets/NOTICES",
 "assets/AssetManifest.json",
 "assets/FontManifest.json"];
-
 // During install, the TEMP cache is populated with the application shell files.
 self.addEventListener("install", (event) => {
+  skipWaiting();
   return event.waitUntil(
     caches.open(TEMP).then((cache) => {
       return cache.addAll(
@@ -52,7 +53,6 @@ self.addEventListener("activate", function(event) {
       var tempCache = await caches.open(TEMP);
       var manifestCache = await caches.open(MANIFEST);
       var manifest = await manifestCache.match('manifest');
-
       // When there is no prior manifest, clear the entire cache.
       if (!manifest) {
         await caches.delete(CACHE_NAME);
@@ -66,7 +66,6 @@ self.addEventListener("activate", function(event) {
         await manifestCache.put('manifest', new Response(JSON.stringify(RESOURCES)));
         return;
       }
-
       var oldManifest = await manifest.json();
       var origin = self.location.origin;
       for (var request of await contentCache.keys()) {
@@ -139,11 +138,12 @@ self.addEventListener('message', (event) => {
   // SkipWaiting can be used to immediately activate a waiting service worker.
   // This will also require a page refresh triggered by the main worker.
   if (event.data === 'skipWaiting') {
-    return self.skipWaiting();
+    skipWaiting();
+    return;
   }
-
-  if (event.message === 'downloadOffline') {
+  if (event.data === 'downloadOffline') {
     downloadOffline();
+    return;
   }
 });
 
@@ -188,4 +188,10 @@ function onlineFirst(event) {
       });
     })
   );
+}
+
+function skipWaiting() {
+  if (self.skipWaiting != undefined) {
+    self.skipWaiting();
+  }
 }
