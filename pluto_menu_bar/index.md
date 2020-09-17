@@ -131,6 +131,3 @@ class PlutoMenuBarDemo extends StatelessWidget {
   }
 }
 ```
-
-### Coming soon
-* Add theme
