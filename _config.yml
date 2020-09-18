@@ -2,5 +2,4 @@ markdown: kramdown
 
 theme: jekyll-theme-cayman
 
-plugins:
-  - jekyll-gist
+plugins: ['jekyll-twitter-plugin']
