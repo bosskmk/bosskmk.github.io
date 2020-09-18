@@ -8,6 +8,3 @@
 
 * [Dart](https://bosskmk.github.io/topic/dart/differences_map_foreach.html) - map 과 forEach 차이점. 
 * [Flutter](https://bosskmk.github.io/topic/flutter/nested_raw_keyboard_listener.html) - RawKeyboardListener 를 중첩해서 사용 할 때 TextField 에서 엔터키 차이
-
-## Flutter
-<iframe style="width: 500px; height: 600px;" src="https://github.com/bosskmk/bosskmk.github.io/blob/master/embeb/flutter_twitter.html">
