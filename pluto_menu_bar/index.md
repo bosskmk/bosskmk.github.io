@@ -1,22 +1,34 @@
 ## PlutoMenuBar for flutter - v0.1.3
 
+<br>
+
 PlutoMenuBar is a horizontal menu bar for flutter.
+
+<br>
 
 ### Features
 - Multiple sub-menu : Add as many submenus as you like.
 - Change the default style : Change the background, font, and border.
 
-### Demo
-[Demo Web](https://bosskmk.github.io/pluto_menu_bar/build/web/index.html)
+<br>
 
-### Installation
-[pub.dev](https://pub.dev/packages/pluto_menu_bar)
+### [Demo Web](https://bosskmk.github.io/pluto_menu_bar/build/web/index.html)
+> Try some simple features on the demo site.
+
+<br>
+
+### [Pub.Dev](https://pub.dev/packages/pluto_menu_bar)
+> Check out how to install from the official distribution site.
+
+<br>
 
 ### Screenshots
 
 ![PlutoMenuBar Image](https://bosskmk.github.io/images/pluto_menu_bar_img1.gif)
 
-### Usage
+<br>
+
+### Example
 ```dart
 import 'package:flutter/material.dart';
 import 'package:pluto_menu_bar/pluto_menu_bar.dart';
@@ -131,3 +143,15 @@ class PlutoMenuBarDemo extends StatelessWidget {
   }
 }
 ```
+
+<br>
+
+### Pluto series
+> develop packages that make it easy to develop admin pages or CMS with Flutter.
+* [PlutoGrid](https://github.com/bosskmk/pluto_grid)
+* [PlutoMenuBar](https://github.com/bosskmk/pluto_menu_bar)
+
+<br>
+
+### License
+> MIT
