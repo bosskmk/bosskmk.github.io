@@ -31727,32 +31727,35 @@ var s=H.b([R.aO(!0,!0,!0,"column_1",C.p,"column 1",new R.bs(!1),200),R.aO(!0,!0,
 this.d=s
 this.e=A.o2(s,30)},
 a1b:function(a){if(H.D(a.b)===C.jc&&R.acK(a))this.tC()},
-tC:function(){var s=0,r=P.ap(t.z),q=this,p,o,n
+tC:function(){var s=0,r=P.ap(t.z),q,p=this,o,n,m
 var $async$tC=P.ak(function(a,b){if(a===1)return P.am(b,r)
-while(true)switch(s){case 0:n=q.c
-n.toString
-p=t.X
-s=2
-return P.aB(E.Mb(new B.a3v(),n,p),$async$tC)
-case 2:o=b
-if(o!=null){n=P.aa(["column_1",new R.U(o,null,new N.L()),"column_2",new R.U(o,null,new N.L()),"column_3",new R.U(o,null,new N.L()),"column_4",new R.U(o,null,new N.L()),"column_5",new R.U(o,null,new N.L())],p,t.Q)
-q.f.zA(H.b([new R.aE(n,new N.L())],t.u))
-q.f.jD(C.a6,1)
-p=q.f
-n=n.gip(n)
-p.fp(n.gE(n).b,0)}return P.an(null,r)}})
+while(true)switch(s){case 0:m=p.c
+m.toString
+o=t.X
+s=3
+return P.aB(E.Mb(new B.a3v(),m,o),$async$tC)
+case 3:n=b
+if(n==null||n.length===0){s=1
+break}m=P.aa(["column_1",new R.U(n,null,new N.L()),"column_2",new R.U(n,null,new N.L()),"column_3",new R.U(n,null,new N.L()),"column_4",new R.U(n,null,new N.L()),"column_5",new R.U(n,null,new N.L())],o,t.Q)
+p.f.zA(H.b([new R.aE(m,new N.L())],t.u))
+p.f.jD(C.a6,1)
+o=p.f
+m=m.gip(m)
+o.fp(m.gE(m).b,0)
+case 1:return P.an(q,r)}})
 return P.ao($async$tC,r)},
 tB:function(a){return this.a3g(a)},
-a3g:function(a){var s=0,r=P.ap(t.z),q=this,p,o
+a3g:function(a){var s=0,r=P.ap(t.z),q,p=this,o,n
 var $async$tB=P.ak(function(b,c){if(b===1)return P.am(c,r)
-while(true)switch(s){case 0:o=q.c
-o.toString
-s=2
-return P.aB(E.Mb(new B.a3r(a),o,t.X),$async$tB)
-case 2:p=c
-o=q.f
-o.ZL(o.gfL().a.i(0,"column_1").c,p,!0)
-return P.an(null,r)}})
+while(true)switch(s){case 0:n=p.c
+n.toString
+s=3
+return P.aB(E.Mb(new B.a3r(a),n,t.X),$async$tB)
+case 3:o=c
+if(o==null||o.length===0){s=1
+break}n=p.f
+n.ZL(n.gfL().a.i(0,"column_1").c,o,!0)
+case 1:return P.an(q,r)}})
 return P.ao($async$tB,r)},
 B:function(a,b){var s=this,r="Listing mode",q=null,p=t.t
 return new O.cK(r,r,H.b([L.al(u.n,q,q,q,q,q,q),L.al("Press Enter or tap to call up the Detail popup.",q,q,q,q,q,q),L.al("Pressing the Ctrl(Meta on MacOS) + C keys can invoke a popup to enter a new record.",q,q,q,q,q,q)],p),H.b([new M.cJ("https://github.com/bosskmk/pluto_grid/blob/master/example/lib/screen/feature/listing_mode_screen.dart",q)],p),R.a9B(s.d,q,q,q,C.bM,new B.a3k(),new B.a3l(s),new B.a3m(s),s.e),q)}}
