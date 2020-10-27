@@ -21,7 +21,7 @@ const RESOURCES = {
 "assets/assets/images/time_popup.jpg": "d168d9bce12cd7f46b0b807ebc879e4f",
 "assets/FontManifest.json": "b674742b3fd36f023a81441f2dc808b5",
 "assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac",
-"assets/NOTICES": "8d0b164c3f033c65f72045918fe37cee",
+"assets/NOTICES": "7a5656ce18477f3eea2431a09da31456",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "115e937bb829a890521f72d2e664b632",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf": "5a37ae808cf9f652198acde612b5328d",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-regular-400.ttf": "2bca5ec802e40d3f4b60343e346cedde",
@@ -29,9 +29,9 @@ const RESOURCES = {
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"index.html": "42b7a08e5216774736c140852ebd7421",
-"/": "42b7a08e5216774736c140852ebd7421",
-"main.dart.js": "bd376bbd7c117351b2a1549f1a1543ed",
+"index.html": "7ee9b6cc27c4c3e941447f3c0c870a58",
+"/": "7ee9b6cc27c4c3e941447f3c0c870a58",
+"main.dart.js": "b147fce291d2361213bc384bcc46b4bb",
 "manifest.json": "9e7b34fd7c291ca2523123ef20497930",
 "version.json": "4b6db237b3514a88107a422469adfb0f"
 };
