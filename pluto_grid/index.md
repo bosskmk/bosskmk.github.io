@@ -1,4 +1,4 @@
-## PlutoGrid for flutter - v1.1.0
+## PlutoGrid for flutter - v1.1.1
 
 [![codecov](https://codecov.io/gh/bosskmk/pluto_grid/branch/master/graph/badge.svg)](https://codecov.io/gh/bosskmk/pluto_grid)
 
@@ -151,14 +151,14 @@ Widget build(BuildContext context) {
     body: Container(
       padding: const EdgeInsets.all(30),
       child: PlutoGrid(
-              columns: columns,
-              rows: rows,
-              onChanged: (PlutoGridOnChangedEvent event) {
-                print(event);
-              },
-              onLoaded: (PlutoGridOnLoadedEvent event) {
-                print(event);
-              }
+          columns: columns,
+          rows: rows,
+          onChanged: (PlutoGridOnChangedEvent event) {
+            print(event);
+          },
+          onLoaded: (PlutoGridOnLoadedEvent event) {
+            print(event);
+          }
       ),
     ),
   );
