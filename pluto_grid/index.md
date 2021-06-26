@@ -1,4 +1,4 @@
-## PlutoGrid for flutter - v2.2.0
+## PlutoGrid for flutter - v2.2.1
 
 [![codecov](https://codecov.io/gh/bosskmk/pluto_grid/branch/master/graph/badge.svg)](https://codecov.io/gh/bosskmk/pluto_grid)
 
@@ -143,14 +143,14 @@ List<PlutoRow> rows = [
 Create a grid with the data created above.
 ```dart
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('PlutoGrid Demo'),
-      ),
-      body: Container(
-        padding: const EdgeInsets.all(30),
-        child: PlutoGrid(
+Widget build(BuildContext context) {
+  return Scaffold(
+    appBar: AppBar(
+      title: const Text('PlutoGrid Demo'),
+    ),
+    body: Container(
+      padding: const EdgeInsets.all(30),
+      child: PlutoGrid(
           columns: columns,
           rows: rows,
           onChanged: (PlutoGridOnChangedEvent event) {
@@ -159,10 +159,10 @@ Create a grid with the data created above.
           onLoaded: (PlutoGridOnLoadedEvent event) {
             print(event);
           }
-        ),
       ),
-    );
-  }
+    ),
+  );
+}
 ```
 
 <br>
