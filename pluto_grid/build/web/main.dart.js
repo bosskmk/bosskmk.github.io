@@ -45745,11 +45745,11 @@ while(true)switch(s){case 0:n=$.KR()
 l=A
 k=A
 s=2
-return A.ab(n.ek(0,"fonts/open_sans/OpenSans-Regular.ttf"),$async$nZ)
+return A.ab(n.ek(0,"assets/fonts/open_sans/OpenSans-Regular.ttf"),$async$nZ)
 case 2:k=new k.G6(b,null)
 j=A
 s=3
-return A.ab(n.ek(0,"fonts/open_sans/OpenSans-Bold.ttf"),$async$nZ)
+return A.ab(n.ek(0,"assets/fonts/open_sans/OpenSans-Bold.ttf"),$async$nZ)
 case 3:m=l.aVR(k,new j.G6(b,null))
 s=4
 return A.ab(new A.afJ("Pluto Grid Sample pdf print","Pluto Grid Rocks!",B.Xm.gasL(),m).Hw(q.a.c),$async$nZ)
