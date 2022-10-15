@@ -20,9 +20,9 @@ const RESOURCES = {
 "assets/fonts/MaterialIcons-Regular.otf": "95db9098c58fd6db106f1116bae85a0b",
 "assets/NOTICES": "633c31096d1ba2ec7c2f3a3c5936bb3e",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
-"assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf": "d1722d5cf2c7855862f68edb85e31f88",
-"assets/packages/font_awesome_flutter/lib/fonts/fa-regular-400.ttf": "613e4cc1af0eb5148b8ce409ad35446d",
-"assets/packages/font_awesome_flutter/lib/fonts/fa-solid-900.ttf": "dd3c4233029270506ecc994d67785a37",
+"assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf": "4e20cb87b0d43808c49449ffd69b1a74",
+"assets/packages/font_awesome_flutter/lib/fonts/fa-regular-400.ttf": "1f7cb220b3f5309130bd6d9ad87e0fc0",
+"assets/packages/font_awesome_flutter/lib/fonts/fa-solid-900.ttf": "26f5af2d93473531f82ef5060f9c6d45",
 "assets/shaders/ink_sparkle.frag": "d0b36090b07a1584a39b55248ecd544d",
 "canvaskit/canvaskit.js": "2bc454a691c631b07a9307ac4ca47797",
 "canvaskit/canvaskit.wasm": "bf50631470eb967688cca13ee181af62",
@@ -32,10 +32,10 @@ const RESOURCES = {
 "flutter.js": "f85e6fb278b0fd20c349186fb46ae36d",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"index.html": "9e0db8e1dc4e2cb27fe32e27530e292e",
-"/": "9e0db8e1dc4e2cb27fe32e27530e292e",
-"main.dart.js": "801f01672b0ea60924cbc1532e1422d6",
-"manifest.json": "9e7b34fd7c291ca2523123ef20497930",
+"index.html": "20deb8d3af7861ed4a5f689b2b1aa8de",
+"/": "20deb8d3af7861ed4a5f689b2b1aa8de",
+"main.dart.js": "92b5e920352d3c337d32d7313ef4ceb0",
+"manifest.json": "15f73b7e8a8209c2206210b3ac8dea1b",
 "version.json": "1e98a4f7390d2e9d9ad60c99fb0aff05"
 };
 
