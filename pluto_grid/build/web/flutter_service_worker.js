@@ -28,12 +28,12 @@ const RESOURCES = {
 "canvaskit/profiling/canvaskit.js": "c21852696bc1cc82e8894d851c01921a",
 "canvaskit/profiling/canvaskit.wasm": "371bc4e204443b0d5e774d64a046eb99",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
-"flutter.js": "1cfe996e845b3a8a33f57607e8b09ee4",
+"flutter.js": "a85fcf6324d3c4d3ae3be1ae4931e9c5",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"index.html": "4f23e9635593a0e6149478f5c5972a0c",
-"/": "4f23e9635593a0e6149478f5c5972a0c",
-"main.dart.js": "50c30affbf63faf02e496db9a7126733",
+"index.html": "e816f199dceaaf07b2ed53878762228f",
+"/": "e816f199dceaaf07b2ed53878762228f",
+"main.dart.js": "3fe51b7c86a8eb60b77a2dacb32534bc",
 "manifest.json": "15f73b7e8a8209c2206210b3ac8dea1b",
 "version.json": "1e98a4f7390d2e9d9ad60c99fb0aff05"
 };
